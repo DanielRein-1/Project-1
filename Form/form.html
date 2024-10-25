@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+</head>
+<body>
+    <fieldset>
+    <form action="index.php" method="post" enctype="multipart/form-data">
+
+      <label for="username">Username:</label>  <input type="text" placeholder="Username" id="username"  required >
+
+      <br>
+
+      <label for="password">Password:</label>
+      <input type="password" maxlength="8" placeholder="******" id="password" required>
+
+      <br>
+
+      <label for="email">Email:</label>
+      <input type="email"  name="Yahoo" id="Email" placeholder="Username@gmail.com">
+
+      <br>
+
+      <label for="phone">Tel-Num:</label>
+      <input type="phone" name="Telephone" id="phone"
+      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4} "placeholder ="123-456-7890">
+
+      <br>
+      
+      <label for="date">D.o.B:</label>
+      <input type="date" name="Bday" id="date">
+      
+      <br>
+
+      <label for="title">Title:</label>
+      <label for="Mr">Mr.</label>
+      <input type="radio" name="title" id="Mr">
+      <label for="Ms">Ms.</label>
+      <input type="radio" name="title" id="Ms">
+      <label for="phD">phD.</label>
+      <input type="radio" name="title" id="phD">
+      
+      <br>
+
+      <label for="payment">payment:</label>
+          <select name="payment" id="payment">
+            <option value="Visa">Visa</option>
+            <option value="Paypal">Paypal</option>
+            <option value="Mastercard">Mastercard</option>
+          </select>
+
+          <br>
+
+          <label for="subscribe">Subscribe:</label>
+          <input type="checkbox" id="subscribe">
+
+          <br>
+
+          <label for="comment">Comment:</label>
+          <textarea name="Comment" id="Comment" cols="30" rows="5"></textarea>
+
+          <br>
+          <br>
+          <label for="file">File:</label>
+          <input type="file" name="file" id="file" accept="image/png,image/jpeg">
+          <br>
+      <input type="reset">
+      <input type="submit" value="submit">
+
+    </form>
+    </fieldset>
+</body>
+</html>
